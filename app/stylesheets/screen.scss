@@ -206,7 +206,7 @@ padding-top: 8px;
 			line-height: 54px;
 			height:54px;
 			font-size: 16px;
-			span.text {
+			div.text {
 				padding-left:60px;
 				padding-right:12px;
 			}
@@ -254,9 +254,61 @@ padding-top: 8px;
 		a#stat {
 			span.icon { background-position: -648px 0; } 
 		}
-		
-		
-		
+		a#pack_photograph {
+			span.icon {
+				background: transparent url(/images/pack_icons.png) 0 0 no-repeat;
+				background-position: -54px 0px;
+			}
+		}
+		a#pack_restaurants {
+			span.icon {
+				background: transparent url(/images/pack_icons.png) 0 0 no-repeat;
+				background-position: -108px 0px;
+			}
+		}
+
+		a#pack_villas {
+			span.icon {
+				background: transparent url(/images/pack_icons.png) 0 0 no-repeat;
+				background-position: -270px 0px;
+			}
+		}
+		a#pack_hotels {
+			span.icon {
+				background: transparent url(/images/pack_icons.png) 0 0 no-repeat;
+				background-position: 0px 0px;
+			}
+		} 
+		a#pack_realties {
+			span.icon {
+				background: transparent url(/images/pack_icons.png) 0 0 no-repeat;
+				background-position: -216px 0px;
+			}
+		}
+		a#pack_ecommerce {
+			span.icon {
+				background: transparent url(/images/pack_icons.png) 0 0 no-repeat;
+				background-position: -162px 0px;
+			}
+		}
+		a#pack_liberal {
+			span.icon {
+				background: transparent url(/images/pack_icons.png) 0 0 no-repeat;
+				background-position: -324px 0px;
+			}
+		}
+		a#pack_artisan {
+			span.icon {
+				background: transparent url(/images/pack_icons.png) 0 0 no-repeat;
+				background-position: -378px 0px;
+			}
+		} 
+		a#pack_designers {
+			span.icon {
+				background: transparent url(/images/pack_icons.png) 0 0 no-repeat;
+				background-position: -432px 0px;
+			}
+		}
 	}
 }
 
