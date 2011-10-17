@@ -1,0 +1,3 @@
+cd ~/developer/workspace/gko_cms_joufdesign_com
+bundle install
+rails s  
