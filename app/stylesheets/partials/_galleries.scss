@@ -1,0 +1,36 @@
+#content {
+	ul.list-view.list-view-galleries { 
+		li {
+			width:$list-thumb-width;
+			margin-right: 25px;//less framework margin + 1
+			margin-bottom: 24px;
+			&:nth-child(3n+3) {
+				margin-right: 0px;
+			}
+		}
+	}
+}
+#content.content-sidebar {
+	ul.list-view.list-view-galleries { 
+		li {
+			width:$list-thumb-width;
+			margin-right: 25px;//less framework margin + 1
+			margin-bottom: 24px;
+			&:nth-child(2n+2) {
+				margin-right: 0px;
+			}
+		}
+	}
+}
+#content.sidebar-left {
+	ul.list-view.list-view-galleries { 
+		li {
+			width:$list-thumb-width;
+			margin-left: 25px;//less framework margin + 1
+			margin-bottom: 24px;
+			&:nth-child(2n+2) {
+				margin-left: 0px;
+			}
+		}
+	}
+}
