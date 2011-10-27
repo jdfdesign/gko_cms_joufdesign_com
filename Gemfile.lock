@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:jdfdesign/gko_cms.git
-  revision: 38d24c7246ea4b9048046d9f45ca7b20be453fe7
+  revision: d89c5589f8f304883bc6b99c3248930e602be42f
   specs:
     gko-inquiry (0.0.31)
       filters_spam (~> 0.2)
@@ -8,14 +8,14 @@ GIT
 
 GIT
   remote: git@github.com:jdfdesign/gko_cms.git
-  revision: 38d24c7246ea4b9048046d9f45ca7b20be453fe7
+  revision: d89c5589f8f304883bc6b99c3248930e602be42f
   specs:
     gko-blog (0.0.24)
       gko-core
 
 GIT
   remote: git@github.com:jdfdesign/gko_cms.git
-  revision: 38d24c7246ea4b9048046d9f45ca7b20be453fe7
+  revision: d89c5589f8f304883bc6b99c3248930e602be42f
   specs:
     gko-gallery (0.0.3)
       gko-core
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: git@github.com:jdfdesign/gko_cms.git
-  revision: 38d24c7246ea4b9048046d9f45ca7b20be453fe7
+  revision: d89c5589f8f304883bc6b99c3248930e602be42f
   specs:
     gko-category (0.0.23)
       gko-core
@@ -32,9 +32,9 @@ GIT
 
 GIT
   remote: git@github.com:jdfdesign/gko_cms.git
-  revision: 38d24c7246ea4b9048046d9f45ca7b20be453fe7
+  revision: d89c5589f8f304883bc6b99c3248930e602be42f
   specs:
-    gko-core (0.0.47)
+    gko-core (0.0.55)
       activesupport-slices (= 0.0.2)
       acts_as_indexed (~> 0.7)
       bundler (= 1.1.pre.4)
@@ -64,9 +64,9 @@ GIT
 
 GIT
   remote: git@github.com:jdfdesign/gko_cms.git
-  revision: 38d24c7246ea4b9048046d9f45ca7b20be453fe7
+  revision: d89c5589f8f304883bc6b99c3248930e602be42f
   specs:
-    gko-images (0.0.30)
+    gko-images (0.0.33)
       dragonfly (~> 0.9.8)
       gko-core
       mime-types
@@ -74,7 +74,7 @@ GIT
 
 GIT
   remote: git@github.com:jdfdesign/gko_cms.git
-  revision: 38d24c7246ea4b9048046d9f45ca7b20be453fe7
+  revision: d89c5589f8f304883bc6b99c3248930e602be42f
   specs:
     gko-auth (0.0.28)
       cancan (~> 1.6.0)
@@ -173,7 +173,7 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    mime-types (1.16)
+    mime-types (1.17.2)
     minimal (0.0.25)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -212,7 +212,7 @@ GEM
       rdoc (~> 3.4)
       thor (~> 0.14.4)
     rake (0.9.2)
-    rdoc (3.10)
+    rdoc (3.11)
       json (~> 1.4)
     responders (0.6.4)
     riot (0.12.5)
@@ -251,9 +251,9 @@ DEPENDENCIES
   gko-auth (= 0.0.28)!
   gko-blog (= 0.0.24)!
   gko-category (= 0.0.23)!
-  gko-core (= 0.0.47)!
+  gko-core (= 0.0.55)!
   gko-gallery (= 0.0.3)!
-  gko-images (= 0.0.30)!
+  gko-images (= 0.0.33)!
   gko-inquiry (= 0.0.31)!
   gko-sticker (= 0.0.23)!
   smurf!
