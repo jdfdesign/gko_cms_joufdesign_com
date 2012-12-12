@@ -1,0 +1,42 @@
+@import "twitter/bootstrap/responsive";
+@import "gko/default_responsive";
+@media(max-width: 797px) { 
+	
+}
+@media(min-width: 980px) { 
+	#main-container {
+
+		padding: 0;
+		.row-fluid {
+			padding: 40px 20px;
+		}
+		.features {
+			max-width: 960px;
+			@include center-block;
+			.span4 {
+				margin-top: 60px;
+			}
+
+			em {
+				font-size: 52px;
+			}
+			h2 {
+				font-weight: 300;
+			}
+		}
+	}
+	
+	.navbar {
+		margin-bottom: 0;
+		.nav-collapse {
+			float: right;
+			.nav > li > a {
+				text-transform: uppercase;
+				font-weight: 600;
+			}
+		}
+		.brand {
+			padding: 34px 20px;
+		}
+	}
+}

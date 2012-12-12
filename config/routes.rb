@@ -1,4 +1,4 @@
-GkoJoufdesignCom::Application.routes.draw do
+GkoCmsJoufdesignCom::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

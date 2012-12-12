@@ -2,6 +2,7 @@
 require File.expand_path('../application', __FILE__)
 
 # Initialize the rails application
-GkoJoufdesignCom::Application.initialize!
+GkoCmsJoufdesignCom::Application.initialize!
 
 
+ActiveRecord::Base.include_root_in_json = true

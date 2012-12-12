@@ -1,0 +1,150 @@
+* {
+@include box-sizing(border-box);
+}
+/*-----------------------------------------
+ GLOBAL EFFECT
+----------------------------------------- */
+a {
+	@include transition("color .5s linear, background-color .5s linear")
+}
+
+em {
+	display: block;
+}
+
+h1 {
+	font-size: 28px;
+	font-weight: 400;
+}
+
+
+
+#packages-after {
+	padding: 15px 0;
+	text-align: center;
+	background-color: $grayLighter;
+	border-top: 1px solid #E4E4E4;
+	border-bottom: 1px solid #E4E4E4;
+	h2, h3 {
+		font-weight: 300;
+		max-width: 789px;
+		@include center-block;
+	}
+}
+section.inverse {
+	position: relative;
+	background-image: asset-url("black_linen_v2.png", image);
+	background-size: contain;
+	background-repeat: repeat;
+	background-color: $grayDark;
+	background-position: top left;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	border-top: 1px solid $black;
+	border-bottom: 1px solid $black;
+	padding: 15px 0;
+	text-align: center;
+	color: $white;
+
+	@include box-shadow("inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2)");
+	
+	h2, h3  {
+		color: $white;
+		font-weight: 300;
+		max-width: 789px;
+		@include center-block;
+	}
+	.snap {
+		z-index: 10;
+		position: absolute;
+		bottom: -9px;
+		left: 50%;
+		margin-left: -9px;
+		width: 0; 
+		height: 0; 
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 10px solid $grayDark;
+	}
+	p {
+		color: $grayLight;
+	}	
+}
+
+.jumbotron {
+position: relative;
+padding: 40px 0;
+color: white;
+text-align: center;
+text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
+background: #020031;
+@include box-shadow("inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2)");
+background-image: asset-url("large-cinema-display.png", image);
+background-size: contain;
+background-repeat: no-repeat;
+background-color: red;
+background-position: center center;
+-webkit-transform: translate3d(0px, 0px, 0px);
+height: 650px;
+h1 {
+	font-size: 52px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 600;
+	line-height: 62px;
+	padding-top: 175px;
+	max-width: 789px;
+	@include center-block;
+}
+}
+
+
+.module {
+	position: relative;
+	margin-bottom: 24px;
+	background: #F6F6F6;
+	padding: 24px;
+	@include border-radius(8px);
+	text-align: center;
+	font-size: 16px;
+}
+#packages-intro {
+	h2 {
+		color: #4F9AE0;
+	}
+}
+.packages-modules {
+	background: #4F9AE0;
+	.mod-pricing {
+			//height: 350px;
+			overflow: hidden;
+			//min-height: 350px;
+			@include box-shadow(0 0 16px #454545);
+
+		header {
+			text-align: center;
+			background: white;
+			width: 120%;
+			margin-left: -10%;
+			margin-top: -10%;
+			padding: 24px 0;
+			@include border-radius(8px 8px 0 0);
+			.fee {
+				font-size: 21px;
+				color: #C4C4C4;
+			}
+		}
+		.mod-body {
+			padding-top: 24px;
+			height: 100%;
+		}
+		ul {
+			margin-left: 0;
+			list-style: none;
+			
+			li {
+				
+				line-height: 30px;
+			}
+		}
+	}
+}

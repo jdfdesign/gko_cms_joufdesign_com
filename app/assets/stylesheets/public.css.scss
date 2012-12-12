@@ -1,0 +1,16 @@
+/*-----------------------------------------
+   GRID
+----------------------------------------- */
+
+$themeColor: #F73B3B; //red
+
+@import "variables";
+@import "twitter/awesome-bootstrap";
+@import "gko/public/base";
+@import "base";
+@import "responsive";
+
+#wrapper-wide-body {
+	max-width: 980px;
+	@include block-center;
+}

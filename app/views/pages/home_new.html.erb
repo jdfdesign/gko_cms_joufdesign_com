@@ -1,0 +1,373 @@
+<% 
+@features = site.features.live
+%>
+
+<% content_for :page_container do %>
+<header class="jumbotron subhead">
+  <div class="container">
+    <h1>TOUT CE QU'IL VOUS FAUT POUR CRÉER ET GÉRER VOTRE SITE SANS COMPÉTENCES TECHNIQUES
+  </h1></div>
+</header>
+<% if @features.any? %>
+  <div class="row-fluid">
+    <div class="span12">
+      <%= render 'shared/carousel', :features => @features %>
+    </div>
+  </div> 
+<% end %>
+
+<section class="row-fluid features">
+	<div class="span4">
+                <em class="icon-beaker icon-large"></em>
+		<h2>Quoi?</h2>
+		<p>Une solution complète pour héberger, créer et gérer des sites Internet au graphisme professionnel. La plateforme de création de site Internet de Jouf Design est très simple d'utilisation et ne nécessite aucune compétence technique.</p>
+	</div>
+	<div class="span4">
+                 <em class=" icon-magic icon-large"></em>
+		<h2>Pour qui?</h2>
+		<p>Pour toutes les personnes et entreprises voulant gérer leur site sans compétences techniques. La flexibilité de la plateforme Internet de Jouf Design permet de s'adapter aux besoins spécifiques de chacun : designers, photographes, hôteliers, agents immobiliers, restaurants, blogger&#160;...</p>
+	</div>
+	<div class="span4">
+                 <em class="icon-magnet icon-large"></em>
+		<h2>Pourquoi?</h2>
+		<p>Vous avez un contrôle total sur votre site. Vous pouvez changer la structure de votre site, créer autant de pages que vous le souhaitez. Votre site est de plus accessible depuis les smartphones et tablettes mobile. Le tout en véritable multilingue !</p>
+	</div>
+</section>
+<section id="packages-intro" class="inverse">
+	<div class="row-fluid">
+		<div class="span12">
+			<h2>NOS PACKAGES "MÉTIER"</h2>
+			<p>La plateforme de développement de site Internet de Jouf Design est constituée de différents modules. L'assemblage de ces modules nous permet de répondre à la plupart des besoins des sites Internet.<br/>Ainsi chacun de nos packs "métier" regroupe différents modules pour répondre aux besoins du secteur d'activité en question. D'autres modules peuvent venir s'ajouter à ces packs, comme par exemple les modules blog, calendrier, multi-devises…</p>
+	<span class="snap"></span>
+		</div>
+	</div>
+</section>
+<section class="packages-modules">
+	<div class="row-fluid ">
+		
+		<div class="span3 home-pack">
+			<div class="module mod-pricing">
+				<header>
+					<h2>Restaurants</h2>
+					<span class="fee">$10/month</span>
+				</header>
+				<div class="mod-body">
+					<p>Site internet dédié aux restaurants</p>
+					<p>Exemple de modules complémentaires:
+					<ul class="feature-list">
+						<li>Press room</li>
+						<li>Banque d'image HD</li>
+						<li>Blog</li>
+						<li>News</li>
+						<li>Team</li>
+						<li>Devise</li>
+						<li>Multi Calendrier</li>
+					</ul></p>
+					<a href="#pack-hotel-modal" class="btn btn-info btn-large btn-block" data-toggle="modal">Voir le détail</a>
+				</div>
+			</div>
+		</div>
+		<div class="span3 home-pack">
+		     <h4>Hôtels</h4>
+		     <p>Site internet dédié aux hôtels</p>
+		     <p><em>Exemple de modules complémentaires:
+		     <ul>
+				<li>Restaurant</li>
+				<li>Press room</li>
+				<li>Banque d'image HD</li>
+				<li>Blog</li>
+				<li>News</li>
+				<li>Team</li>
+				<li>Multi Devise</li>
+		     </ul></em></p>
+		</div>
+		<div class="span3 home-pack">
+		     <h4>Agence immobilière</h4>
+		     <p>Site internet dédié aux agences immobilières réalisant de la vente et/ou de la location annuelle ou saisonnière.</p>
+		     <p><em>Exemple de modules complémentaires:
+		     <ul>
+				<li>Press Room</li>
+				<li>Banque d'image HD</li>
+				<li>Blog</li>
+				<li>News</li>
+				<li>Team</li>
+				<li>Multi Devise</li>
+		     </ul></em></p>
+		</div>
+		<div class="span3 home-pack">
+		     <h4>Boutique en ligne</h4>
+		     <p>Site e-commerce avec paiement en ligne, gestion du stock, blog...</p>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span3 home-pack">
+		     <h4>Portfolio</h4>
+		     <p>Site internet dédié aux designers, architectes, paysagistes, agence de communication... désirant exposer leur réalisations</p>
+		</div>
+		<div class="span3 home-pack">
+		     <h4>Artisants</h4>
+		     <p>Site internet dédié aux designers, architectes, paysagistes, agence de communication...</p>
+		</div>
+		<div class="span3 home-pack">
+		     <h4>Catalogue</h4>
+		     <p>Site internet dédié aux photographes</p>
+		</div>
+		<div class="span3 home-pack">
+		     <h4>Spectacle</h4>
+		     <p>Site internet basé sur la gestion des dates de représentation... Idéal pour les compagnies d'art vivant ou les groupes de musique</p>
+		</div>
+	</div>
+</section>
+<section id="packages-after" class="row-fluid">
+	<div class="span12">
+ 		<h3> Vous ne savez quel pack choisir ? <br/>Vous avez des besoins spécifiques ?</h3>
+    </div>
+<div class="btn-toolbar">
+	<div class="btn-group">
+	  <button class="btn btn-inverse btn-large">Exposer nous vos besoins</button>
+	</div>
+
+	<div class="btn-group">
+	  <button class="btn btn-inverse btn-large" data-toggle="collapse" href="#collapseModule">Regarder tous les modules existants</button>
+
+	</div>
+</div> <!-- btn-toolbar -->
+<div id="collapseModule" class="collapse">
+	<section class="row-fluid" id="mobile">
+		<div class="span5">
+		<h3>LA SOUPLESSE DES MODULES</h3>
+		<p>Le CMS "GKO" de Jouf Design est constitué de différents modules. L'assemblage de ces modules nous permettent de répondre aux besoins communs de la plupart de sites Internet.<br/>Ainsi nos packs métiers regroupent différents modules pour répondre aux besoins de chaque secteur d'activités. D'autres modules peuvent venir s'ajouter à ces packs, comme par exemple le module blog.</p>
+		<p>Les principaux modules de la plateforme GKO sont:</p>
+		<ul><li>Blog</li>
+		<li>Calendrier d'événement</li>
+		<li>Portfolio</li>
+		<li>Immobilier</li>
+		<li>Commentaires</li>
+		<li>Bannières</li>
+		</ul></div>
+		<div class="span7">
+			<%= image_tag "tour-all-in-one.png" %>
+	    </div>
+	</section>
+</div>
+
+
+
+</section>
+
+
+<section id="tour">
+<section class="inverse intro">
+	<h2>CARATÉRISTIQUES DE TOUS NOS SITES</h2>
+	<p>La plateforme de création de site Internet de Jouf Design est basée sur une architecture modulaire ce qui permet à chacun de nos sites de partager des fonctionnalités essentielles. L'utilisation de cette plateforme pour tous nos sites nous permet également de vous faire bénéficier des évolutions que nous apportons régulièrement de part les évolutions constantes des technologies utilisées ou tout simplement de part le feedback de nos clients.</p>
+	<span class="snap"></span>
+</section>
+<div class="features">
+
+<section class="row-fluid" id="mobile">
+	<div class="span5">
+	<h3>OPTIMISER POUR LES MOBILES</h3>
+	<p>Les designs de site que nous créons s'adaptent à toutes les tailles d'écran. Votre site est donc optimisé pour les téléphones et tablettes mobiles, tels que les iPad et iPhone.</p>
+	<p>Cette version optimisée vise notamment à minimiser la consommation des forfaits téléphoniques. Sur cette version "smartphone" la taille des images est réduite automatiquement et les diaporamas se déclenchent à la demande.</p>
+	<p>Pour voir l'effet produit redimmensionnez la fenêtre de votre navigateur.</p>
+	<p><%= image_tag "tour-mobile-logos.png" %></p></div>
+	<div class="span7">
+		<%= image_tag "tour-mobile.png" %>
+    </div>
+</section>
+
+<section class="row-fluid" id="seo">
+	<div class="span5">
+		<%= image_tag "tour-domain.png" %>
+		<p>
+			<ul>
+				<li>Réécriture des URL automatisées et personnalisables</li>
+				<!--<li>Automatisés balises Open Graph</li>-->
+				<li>Sitemap automatisé pour les moteurs de recherche</li>
+				<!--<li>Facile redirections 301</li> -->
+				<li>Fichier robots.txt automatisé</li>
+				<li>Meta description au niveau de chaque page</li>
+				<li>Meta titre au niveau de chaque page</li>
+				<li>intégration de Google Analytics</li>
+				<li>Mise en cache des pages automatiques</li>
+				<li>Possibilité d'un hébergement Cloud</li>
+			</ul>
+		</p>
+    </div>
+	<div class="span7">
+	<h3>OPTIMISER POUR LE RÉFÉRENCEMENT</h3>
+	<p><strong>Créer un site c'est bien, le trouver sur Internet c'est mieux !</strong></p>
+	<p>Un site bien noté par les moteurs de recherche peut augmenter le trafic et vous apporter des visiteurs qui recherchent ce que vous avez à offrir. La plateforme Internet de Jouf Design fournit les outils nécessaires pour assurer que votre site Internet reçoive l'attention qu'il mérite de la part des moteurs de recherche.</p>
+	<p>La plateforme s'assure que chacune de vos pages soit référençable en complétant pour vous automatiquement les données nécessaires si vous ne les avez pas renseignées. Vous pouvez cependant intervenir manuellement sur chaque page de votre site afin d'affiner les différentes informations.</p>
+
+</div>
+</section>
+
+
+<section class="row-fluid" id="socials">
+	<div class="span7">
+		<%= image_tag "tour-social-blob.png" %>
+    </div>
+	<div class="span5">
+	<h3>SOCIABLEMENT AGRÉABLE</h3>
+	<p>Le référencement prend de plus en plus fortement en compte les interactions entre votre site et des sites de réseaux sociaux comme facebook.</p></div>
+</section>
+
+<section class="row-fluid" id="stats">
+	<div class="span12">
+	<h3><em class="icon-bar-chart icon-large"></em>Statistiques</h3>
+	<p>La plateforme GKO de Jouf Design vous permet d'analyser l'audience de votre site par l'utilisation du service <a href="http://www.google.com/intl/fr/analytics/" target="_blank">Google Analytics</a>.&#160;</p>
+	<p>Cette solution complète et gratuite fournit des indications précieuses sur la fréquentation de votre site Web. Vous pouvez par exemple connaître le nombre de visites par jour, suivre l'évolution du trafic sur plusieurs mois, connaître le pays ou la ville d'origine des internautes qui visitent votre site, voir les pages les plus consultées, savoir d'où viennent vos visiteurs...</p>
+	<p>Jouf Design a choisi Google Analytics car outre sa gratuité, il&#160;est le service d'analyse de trafic Web le plus utilisé, avec environ 85 % du marché mondial. <br/>De plus il est désormais d'usage dans la vie d'un site de réaliser des opérations marketing sur l'Internet afin d'accroitre sa fréquentation. Dans cette optique Google Analytics&#160;couplé au service d'annonce de Google <a href="http://fr.wikipedia.org/wiki/AdWords" target="_blank">AdWords</a>&#160;facilite la conception de&#160;projet&#160;marketing par la rédaction d'annonces ciblées.</p></div>
+</section>
+
+
+
+<section class="row-fluid" id="design">
+	<div class="span6">
+		<h3>À VOTRE IMAGE</h3>
+		<p>Nous créons des sites internet simples et clairs qui prennent en compte la qualité de l'expérience utilisateur.
+		<br/>Tous nos designs sont dits "responsive", c'est à dire qu'il s'adaptent à toutes les tailles d'écran.</p>
+		<p>Dans la plupart des cas nous créons un design spécifique pour chaque site Internet en adéquation avec l'image de marque de nos clients.<br/>Nous proposons toutefois - par soucis d'économie - des modèles "tout en un" avec nos packages "métier" avec le risque que autres sites Internet partagent ce même design.</p>
+		<p>Vous pouvez visiter la page des exemples pour voir quelques réalisations.</p>
+	</div>
+	<div class="span6">
+	<h3>MULTILINGUES</h3>
+	<p>Les sites Internet que nous créons peuvent tous être en plusieurs langues. <br/>Vous pouvez ajouter une nouvelle langue à n'importe quel moment.<p>La traduction des textes - contrairement aux autres systèmes - est extrêmement simple car nous avons porté le multilingue au coeur de notre plateforme (90% des sites que nous réalisons sont multilingues !).</p><p>Chaque page traduite est référencée dans son langage par les moteurs de recherche. Vous pouvez avoir une seule partie de votre site traduite sans dommage pour le référencement de votre site Internet car les pages qui ne sont pas traduites dans une certaine langue ne sont accessibles dans cette langue ni par les moteurs de recherche, ni par les internautes.</p>
+	</div>
+</section>
+
+
+<section class="row-fluid">
+	<div class="span6">
+	<h3></em>ASSISTANCE</h3>
+	<p>Même si notre plateforme de création GKO est simple d'utilisation, vous découvrirez qu'un site internet reste un outil technique qui doit être bien structuré. </p>
+	<p>Pour toute création de site utilisant le CMS GKO :</p>
+	<ul><li>nous vous accompagnons dans la conception de la structure de votre site</li>
+	<li>nous mettons en place la structure initiale des pages</li>
+	<li>nous vous formons à l'utilisation de votre backoffice</li>
+	<li>nous vous expliquons comment remplir les balises de référencement</li>
+	</ul>
+<p>Nous proposons également des prestations d'assistances plus complètes selon vos besoins.</p>
+	</div>
+	<div class="span6">
+	<h3>SUR MESURE</h3>
+	<p>La plateforme GKO de Jouf Design est une base de développement de site Internet. Elle permet de déployer des sites Internet plus rapidement et à moindre coût. Elle est  constituée de différents modules qui répondent à la majorité des besoins. Si toutefois votre site nécessite d'autres fonctionnalités que celles déjà existantes sur la plateforme nous pouvons développer des modules complémentaires répondant à vos besoins spécifiques.&#160;</p>
+	<p>Pour chaque site nous créons généralement un design original. Cependant dans un soucis d'économie, nous proposons des modèles de design - customisable - avec le risque de voir plusieurs site avec le même design.</p>
+	<p>Pour des exemples de site sur mesure vous pouvez <a href="http://joufdesign.com/portfolio" target="_blank">consulter le portfolio</a> de l'agence.</p>
+	</div>
+</section>
+
+</div>
+
+<section class="row-fluid">
+	<div class="span5">
+		<%= image_tag "tour-clouds.png" %>
+    </div>
+	<div class="span7">
+	<h3>HÉBERGÉS SUR NOS SERVEURS</h3>
+	<p>Afin d'assurer le bon fonctionnement des sites nous hébergeons les sites que nous créons. Cela nous permet de simplifier la mise en ligne, de maintenir, d'allouer les ressources suffisantes pour assurer le bon fonctionnement de votre site, de vous faire bénéficier des mises à jour de notre plateforme en cas d'évolution ou d'amélioration.<br/><em>Nous proposons 2 types d'hébergements:</em></p>
+	<ul class="unstyled"><li><strong>Hébergement Standard: </strong>150 euros par an.</li>
+	<li><strong>Hébergement Cloud: </strong>250 euros par an.</li></ul>
+
+	</div>
+</section>
+
+</div>
+
+
+<section id="faq" class="inverse">
+	<h2>Voir les questions fréquentes</h2>
+	<div class="html-text"><h2>Dois-je faire appel à Jouf Design pour créer une nouvelle page dans mon site internet ?
+	</h2>
+	<p>Non, avec votre CMS vous créez facilement une nouvelle page dans votre site internet.</p>
+	<h2>Puis-je créer autant de page que je le souhaite ?</h2>
+	<p>Oui, vous pouvez créer autant de nouvelle page que nécessaires à conditions qu'elles utilisent l'un des modèles de page prévu dans votre CMS.</p>
+	<h2>J'ai un site avec CMS Jouf Design, quelle conséquence si je veux faire évoluer uniquement la présentation graphique de mon site ?</h2>
+	<p>Sur la base d'un site avec la CMS Jouf Design, nous pouvons modifier uniquement la présentation de votre site internet en conservant le "fond" du site, c'est-à-dire les fonctionnalités, les bases de données et leur contenu (photos et textes). <br/>Dans ce cas l'intervention et le coût sont limités : le prix varie en fonction du travail graphique et de développement des feuilles de style à réaliser.<br/>Jouf Design propose des templates de sites (le modèle définissant l'aspect graphique).<br/>Bien entendu,  Jouf Design propose également de construire sur mesure le graphisme de votre site, en adéquation avec votre marque, votre positionnement et vos ambitions.</p>
+	<h2>J'ai déjà un site internet et je veux en créer un nouveau. Les liens indexés dans Google vont-ils continuer de fonctionner ?</h2>
+	<p>Si rien n'est prévu, votre référencement repartira de zero... <br/>Lorsque nous créons votre site internet, nous listons l'ensemble des URL de votre ancien site (les adresses de chaque page de votre site) et nous mettons en place des redirections vers les nouvelles URL, de sorte que vous ne perdez pas le bénéfice acquis par plusieurs années de référencement.</p>
+	<h2>J'ai un site avec CMS Jouf Design et je veux ajouter un blog, quelles sont les conséquences ?</h2>
+	<p>Notre CMS est construite sur des modules que nous pouvons ajouter à votre CMS. Dans ce cas, nous ajoutons le module "blog" à votre CMS et nous créons le template de page blog (c'est à dire la mise en page de la partie visible par les internautes). La nouvelle fonctionnalité est alors disponible dans votre CMS et vous pouvez poster de nouvelles pages sur votre blog. Pour les internautes, le blog est disponible depuis le menu que vous aurez choisi (une nouvelle rubrique du menu principal ou dans un sous menu ou encore en bas de page).</p>
+	</div>
+</section>
+</section>
+
+
+
+
+
+
+<!-- Modal -->
+<div id="pack-hotel-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="packHotelModal" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3 id="packHotelModal">Pack Hotel</h3>
+  </div>
+  <div class="modal-body">
+	    <p><a target="_blank" href="http://villa-demo.joufdesign.com" class="demo-link">Accédez à la démonstration en ligne</a>
+		</p>
+
+		<p>Notre pack CMS Villa est idéal pour les propriétaires de villa souhaitant proposer la location de leur propriété en direct ou pour compléter la description faite sur les sites des agences. </p>
+		<p>Ce pack convient également aux agences immobilières souhaitant créer des mini-sites pour des biens exceptionnels, proposés à la vente ou à la location.</p>
+		<h2> Fonctionnalités du CMS (backoffice) </h2>
+		<ul><li>nombre de page illimité</li>
+		<li>2 langues (français/anglais)</li>
+		<li>diaporama général (home page) </li>
+		<li>page de présentation pour chaque pièce (texte / diaporama)</li>
+		<li>galeries d'images </li>
+		<li>page des tarifs (gestion des saisons / prix par chambre et par saison) </li>
+		<li>formulaire de contact</li>
+		<li>"i like button" de votre page Facebook</li>
+		<li>code Google Analytics pour vos statistiques de trafic</li>
+		</ul>
+		<h2>Le site frontoffice (visible par les internautes)</h2>
+		<ul><li>par défaut : template (modèle) de site "villa standard" donnant une large part aux photos</li>
+		<li>intégration de votre logo</li>
+		<li>adaptation des couleurs du template</li>
+		</ul>
+		<h2>Exemples de sites</h2>
+		<ul><li><a target="_blank" href="http://www.villapleinsudseaview-stbarth.com">www.villapleinsudseaview-stbarth.com</a>
+		</li>
+		<li><a target="_blank" href="http://www.villa-micalao-stbarth.com">www.villa-micalao-stbarth.com</a>
+		</li>
+		</ul>
+
+		<h2>Tarifs</h2>
+		<div class="rates">
+		<p><span class="price">2700 €</span>
+		<br /><em>inclus template villa standard</em>
+		<br /><em>hors hébergement (150 € /an)</em>
+		<br /><em>Création d'un template sur mesure sur devis (à partir de 600 euros)</em>
+		<br /><em>hors textes, traduction US (300€)</em>
+		<br /><em>hors photos professionnelles (à partir de 900€)</em>
+
+		</p>
+		</div>
+
+		<h2>Les textes votre site internet</h2>
+		<p>Les textes doivent être rédigés en prenant en compte à la fois la séduction nécessaire pour vos clients potentiels mais également leur rôle primordial dans le référencement.</p>
+		<p>Nous pouvons prendre en charge la rédaction des textes du site internet et leur traduction en anglais US.</p>
+		<h3>forfait rédaction des textes et traduction US</h3>
+		<p>Forfait textes, traduction US (par un traducteur) : 300 euros</p>
+
+		<h2>Photos de votre villa</h2>
+		<p>Les photos sont particulièrement importantes dans un site de villa. Elles doivent jouer la carte de la séduction avec des visuels puissants et marquants tout en assurant la bonne compréhension des espaces de votre villa et de son ambiance.</p>
+		<p>Nous pouvons prendre en charge le shooting photo de votre villa par un photographe professionnel.</p>
+
+		<h3>forfaits photo professionnelles</h3>
+		<p>forfaits photo à partir de 900 €</p>
+
+		<h2>Photos de paysages de Saint-Barth</h2>
+		<p>Pour des photos de paysages de l'île ou d'événements (Bucket, Voiles de Saint-Barth,...) pour une rubrique présentant Saint-Barthélemy, nous proposons également notre <a target="_blank" href="http://www.stbarthimagebank.com">banque d'images www.stbarthimagebank.com</a>.</p>
+		<h3>forfait rédaction des textes et traduction US</h3>
+		<p>cession de droits pour votre site internet de villa : 30 euros par photo</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Fermer</button>
+    <button href="#" class="btn btn-primary">Nous contacter</button>
+  </div>
+</div>
+<% end %>
+
+

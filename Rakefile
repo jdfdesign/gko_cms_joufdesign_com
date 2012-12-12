@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-GkoJoufdesignCom::Application.load_tasks
+GkoCmsJoufdesignCom::Application.load_tasks
