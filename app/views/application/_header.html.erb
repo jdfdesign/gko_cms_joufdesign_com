@@ -1,0 +1,25 @@
+<!-- Header
+================================================== -->
+<% cache([action_name, site, I18n.locale, 'header-v5']) do %>
+<header class="navbar navbar-fixed-top hide-on-print">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <div class="header-nav">
+        <!-- Be sure to leave the brand out there if you want it shown -->
+        <%= render 'site_title' %>
+		<%= content_tag(:h4, site.subtitle.html_safe, :id => "site-subtitle") if site.subtitle.present? %>
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span><%= t(:navigation_menu) %><i class="icon-chevron-down icon-white"></i></span>
+        </a>
+        <!-- Everything you want hidden at 940px or less, place within here -->
+        <div class="nav-collapse">
+          <!-- .nav, .navbar-search, .navbar-form, etc -->
+          <%= render_primary_menu %>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<% end %>

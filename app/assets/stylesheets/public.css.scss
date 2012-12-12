@@ -7,10 +7,42 @@ $themeColor: #F73B3B; //red
 @import "variables";
 @import "twitter/awesome-bootstrap";
 @import "gko/public/base";
-@import "base";
-@import "responsive";
 
-#wrapper-wide-body {
+
+.btn:focus,
+a:focus {
+  outline: 0;
+}
+.container-fluid {
 	max-width: 980px;
-	@include center-block();
+	@include center-block();	
+}
+
+#main-container {
+	padding-top: $navbarHeight + 80;
+	padding-bottom: 80px;
+
+}
+.navbar {
+	.brand {
+		padding-left: 0;
+	}	
+}
+footer {
+	.nav > li > a {
+		text-shadow: none;
+	}
+}
+
+.thumbnail {
+	background-color: $white;
+	.title {
+		font-size: $baseFontSize;
+		line-height: $baseLineHeight;
+		color: $textColor;
+		margin: 0;
+		a {
+			color: $textColor;
+		}
+	}
 }
