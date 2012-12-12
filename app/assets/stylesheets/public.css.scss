@@ -12,5 +12,5 @@ $themeColor: #F73B3B; //red
 
 #wrapper-wide-body {
 	max-width: 980px;
-	@include block-center;
+	@include center-block();
 }
